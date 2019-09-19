@@ -30,7 +30,7 @@ CREATE TABLE Integrante (
   idIntegrante INTEGER UNSIGNED NOT NULL AUTO_INCREMENT,
   idPuesto INTEGER(1) UNSIGNED NOT NULL,
   nombre VARCHAR(100) NOT NULL,
-  contraseña VARCHAR(30) NOT NULL DEFAULT 'admin',
+  contraseï¿½a VARCHAR(30) NOT NULL DEFAULT 'admin',
   usuario VARCHAR(14) NOT NULL,
   PRIMARY KEY(idIntegrante),
   FOREIGN KEY(idPuesto)
@@ -82,7 +82,7 @@ CREATE TABLE Renta (
   idCliente INTEGER UNSIGNED NOT NULL,
   idIntegrante INTEGER UNSIGNED NOT NULL,
   fecha DATE NOT NULL,
-  fechaDevoluciónAcordada DATE NOT NULL,
+  fechaDevoluciï¿½nAcordada DATE NOT NULL,
   montoAcordado INTEGER UNSIGNED NOT NULL,
   PRIMARY KEY(idRenta),
   INDEX Renta_FKIndex1(idIntegrante),
@@ -136,6 +136,6 @@ SELECT vd.cantidad as Cantidad,
 	p.costo as ImporteUnitario, 
 	vd.importe as Importe, 
 	v.fecha as Fecha 
-	FROM Producto P, VentaDetalle vd, venta v,
-	WHERE vd.idVenta = v.idVenta and 
-	vd.idProducto = p.idProducto;
+	FROM Producto P, VentaDetalle vd, venta v
+	WHERE (vd.idVenta = v.idVenta) and 
+	(vd.idProducto = p.idProducto);
