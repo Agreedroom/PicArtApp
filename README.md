@@ -1,26 +1,29 @@
 # PicArtApp
 
 Software Engineering project to solve the hassle of a local florida man.
+This project hasn't started yet. Well, it did start at some point, but...
+Yeah. 
 
 ## Getting started
 
-Just clone the repo.
+As the project hasn't begun, we advice you to not try to run it as it doesn't contain that much changes.
+Make sure you have all the dependencies.
 
-```bash
-git clone https://github.com/xtrs84zk/PicArtApp.git
-```
-Make sure you have node, react-native, android-sdk-tools, and so installed. (Help)
 ## Usage
 -Android
-Connect your real device or configure an AVD.
+-Connect your real device or configure an AVD.
+
 ```bash
+adb wait-for-device
 react-native run-android
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+## Dependencies
+React-native 2.0.1
+Node 12.1
+Jdk 1.8.0_211
+Android debug bridge 28.0.2
 
-Please make sure to update tests as appropriate.
 
 ## License
 We aren't there yet.
