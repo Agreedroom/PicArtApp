@@ -10,19 +10,14 @@ As the project hasn't begun, we advice you to not try to run it as it doesn't co
 Make sure you have all the dependencies.
 
 ## Usage
--Android
--Connect your real device or configure an AVD.
+
 
 ```bash
-adb wait-for-device
-react-native run-android
+echo "why are we still here"
 ```
 
 ## Dependencies
-React-native 2.0.1
-Node 12.1
-Jdk 1.8.0_211
-Android debug bridge 28.0.2
+
 
 
 ## License
