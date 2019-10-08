@@ -1,3 +1,5 @@
+mysql -h picart.cwxh9dtxcwx7.us-east-2.rds.amazonaws.com --ssl-ca=rds-ca-2015-root.pem --ssl-mode=VERIFY_IDENTITY -p
+
 use picartapp;
 -- creando los puestos --
 insert into puesto values (0,'administrador');
