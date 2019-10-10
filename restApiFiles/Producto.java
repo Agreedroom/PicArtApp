@@ -1,18 +1,25 @@
 package restApiFiles;
 
 public class Producto {
-    //Categorias categoria;
-    int categorias_id_categoria;
+    //spring@column
     int idProducto;
+    //spring@column
     String nombre;
+    //spring@column
     int costo_venta;
+    //spring@column
     int costo_renta;
+    //spring@column
     int cantidad;
+    //spring@column
     String rutaDeLaImagen;
+    //spring@column
     String descripcion;
+    //spring@JoinColumn("idCategoria")
+    Categoria categoria;
 
-    public Producto(Categorias categoria, int idProducto, String nombre, int costo_venta, int costo_renta, int cantidad, String rutaDeLaImagen, String descripcion) {
-        this.categorias_id_categoria = categoria.getId_categoria();
+    public Producto(Categoria categoria, int idProducto, String nombre, int costo_venta, int costo_renta, int cantidad, String rutaDeLaImagen, String descripcion) {
+        this.categoria = categoria;
         this.idProducto = idProducto;
         this.nombre = nombre;
         this.costo_venta = costo_venta;

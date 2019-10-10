@@ -1,12 +1,12 @@
 package restApiFiles;
 
-public class Categorias {
+public class Categoria {
     //Spring@column
     int idCategoria;
     //Spring@column
     String name;
 
-    public Categorias(int idCategoria, String name) {
+    public Categoria(int idCategoria, String name) {
         this.idCategoria = idCategoria;
         this.name = name;
     }

@@ -1,7 +1,9 @@
 package restApiFiles;
 
 public class Puesto {
+    //spring@column
     int idPuesto;
+    //spring@column
     String nombrePuesto;
 
     public Puesto(int idPuesto, String nombrePuesto) {

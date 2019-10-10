@@ -13,12 +13,12 @@ Make sure you have all the dependencies.
 
 
 ```bash
-echo "why are we still here"
+echo "why are we still here, just to suffer"
 ```
 
 ## Dependencies
-
+I guess... there isn't any yet.
 
 
 ## License
-We aren't there yet.
+We aren't there yet. Maybe MIT?

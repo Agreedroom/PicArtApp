@@ -1,9 +1,13 @@
 package restApiFiles;
 
 public class Integrante {
+    //spring@column
     int idIntegrante;
+    //spring@column
     String nombre;
+    //spring@column
     String contrasena;
+    //spring@column
     String usuario;
 
     public Integrante(int idIntegrante, String nombre, String contrasena, String usuario) {

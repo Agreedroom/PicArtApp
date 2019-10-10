@@ -1,20 +1,26 @@
 package restApiFiles;
 
 public class Renta {
+    //spring@column
     int idRenta;
+    //spring@column
     String fecha;
+    //spring@column
     String fechaDevolucionAcordada;
+    //spring@column
     int montoAcordado;
-    int Integrante_idIntegrante;
-    int Cliente_idCliente;
+    //spring@JoinColumn("idCliente")
+    Integrante integrante;
+    //spring@JoinColumn("idCliente")
+    Cliente cliente;
 
-    public Renta(int idRenta, String fecha, String fechaDevolucionAcordada, int montoAcordado, Integrante integrante) {
+    public Renta(int idRenta, String fecha, String fechaDevolucionAcordada, int montoAcordado, Integrante integrante, Cliente cliente) {
         this.idRenta = idRenta;
         this.fecha = fecha;
         this.fechaDevolucionAcordada = fechaDevolucionAcordada;
         this.montoAcordado = montoAcordado;
-        Integrante_idIntegrante = integrante.getIdIntegrante();
-        //Cliente_idCliente = cliente_idCliente;
+        this.integrante = integrante;
+        this.cliente = cliente;
     }
 
     public int getIdRenta() {
@@ -49,19 +55,19 @@ public class Renta {
         this.montoAcordado = montoAcordado;
     }
 
-    public int getIntegrante_idIntegrante() {
-        return Integrante_idIntegrante;
+    public Integrante getIntegrante() {
+        return integrante;
     }
 
-    public void setIntegrante_idIntegrante(int integrante_idIntegrante) {
-        Integrante_idIntegrante = integrante_idIntegrante;
+    public void setIntegrante(Integrante integrante) {
+        this.integrante = integrante;
     }
 
-    public int getCliente_idCliente() {
-        return Cliente_idCliente;
+    public Cliente getCliente() {
+        return cliente;
     }
 
-    public void setCliente_idCliente(int cliente_idCliente) {
-        Cliente_idCliente = cliente_idCliente;
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 }
