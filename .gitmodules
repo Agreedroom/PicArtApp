@@ -1,0 +1,3 @@
+[submodule "PicArtApp-api"]
+	path = PicArtApp-api
+	url = https://github.com/xtrs84zk/PicArtApp-api.git

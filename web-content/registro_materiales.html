@@ -27,41 +27,66 @@
 </head>
 
 <body>
-    <div >
-        <image src="Imagenes/logo.png" width="400" height="250"></image>
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Inicio de Sesión </h2>
+                    <h2 class="title">Registro de Material</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form method="">
                         
                      
                         <div class="form-row">
-                            <div class="name">Usuario</div>
+                            <div class="name">Nombre del Material</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="user">
+                                    <input class="input--style-5" type="text" name="company">
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="form-row m-b-55">
+                            <div class="name">Cantidad</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Precio</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Buscar la manera de hacer mas grande el cuadro del Input para que pueda ser mas grande y haga enter a la hora de escribir la descripcion -->
                         <div class="form-row">
-                            <div class="name">Contaseña</div>
+                            <div class="name">Descripcion</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="password" name="password">
+                                    
+                                    <input class="input--style-6" type="text" name="company" style="align-content: center">
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">Iniciar Sesión</button>
+                            <a href="regreso_menu_material.html"><button class="btn btn--radius-2 btn--red" type="button">Registrar Nuevo Material</button></a>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>

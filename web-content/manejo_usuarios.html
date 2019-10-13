@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Regsitro de Materiales</title>
+    <title>Manejo de usuarios</title>
 
     <!-- Icons font CSS-->
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -27,41 +27,65 @@
 </head>
 
 <body>
-    <div >
-        <image src="Imagenes/logo.png" width="400" height="250"></image>
+    <style>
+        select:invalid { color: gray; }
+    </style>
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Inicio de Sesión </h2>
+                    <h2 class="title">Manejo de Usuarios</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form method="">
+                        <div class="form-row">
+                            <div class="name">Nombre</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="text" name="company" required >
+                                </div>
+                            </div>
+                        </div>
                         
-                     
                         <div class="form-row">
                             <div class="name">Usuario</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="user">
+                                    <input class="input--style-5" type="text" name="email" required >
                                 </div>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="name">Contaseña</div>
+                         <div class="form-row">
+                            <div class="name">Contraseña</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="password" name="password">
+                                    <input class="input--style-5" type="text" name="email"required >
+                                </div>
+                            </div>
+                        </div>        
+                        <div class="form-row">
+                            <div class="name">Puesto</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" required="required">
+                                            <option  value="" disabled="disabled" selected="selected" hidden >Elegir opcion</option>-->
+                                            <option value="1">Administrador</option>
+                                            <option value="0">Integrante</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">Iniciar Sesión</button>
+                           <!-- <a href="regreso_menu_material.html"><button class="btn btn--radius-2 btn--red" type="button">Registrar Usuario</button></a> -->
+                            <button class="btn btn--radius-2 btn--red" type="submit">Registrar Usuario</button>
+                            
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -73,7 +97,6 @@
     <!-- Main JS-->
     <script src="js/global.js"></script>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+    </body>
 </html>
 <!-- end document-->
