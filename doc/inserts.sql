@@ -1,9 +1,13 @@
--- mysql -h picart.cwxh9dtxcwx7.us-east-2.rds.amazonaws.com --ssl-ca=rds-ca-2015-root.pem --ssl-mode=VERIFY_IDENTITY -p
+-- inserts para pruebas en local -- 
+-- ignorar en el deployment real 
 
 -- creando usuarios --
+-- imagina que el usuario tuviera alguna utilidad xd
 GRANT ALL PRIVILEGES ON *.* TO 'Abel'@'localhost' IDENTIFIED BY 'root';
 
+-- seleccionando la base de datos
 use picartapp;
+
 -- creando los puestos --
 insert into Puesto values (0,'administrador');
 INSERT INTO Puesto VALUES (1,'integrante');
@@ -24,3 +28,4 @@ VALUES ('1', 'Pancho Villa', '8443265451', 'njkcs@cnjak.org', '45678945', 'CSNJ4
 INSERT INTO `Categoria` (`idCategoria`, `name`) VALUES ('0', 'sensores');
 
 -- creando productos --
+-- yep
