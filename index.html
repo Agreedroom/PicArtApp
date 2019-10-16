@@ -10,7 +10,7 @@
     <meta name="keywords" content="Colorlib Templates">
 
     <!-- Title Page-->
-    <title>Login</title>
+    <title>Regsitro de Materiales</title>
 
     <!-- Icons font CSS-->
     <link href="webpage/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
@@ -19,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <!-- Vendor CSS-->
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <link href="webpage/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="webpage/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
     <link href="webpage/css/main.css" rel="stylesheet" media="all">
@@ -42,7 +42,7 @@
                             <div class="name">Usuario</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="user">
+                                    <input class="input--style-5" type="text" name="user" id="usuario" required>
                                 </div>
                             </div>
                         </div>
@@ -50,12 +50,14 @@
                             <div class="name">Contaseña</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="password" name="password">
+                                    <input class="input--style-5" type="password" name="password" id="password" required >
                                 </div>
                             </div>
                         </div>
                         <div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">Iniciar Sesión</button>
+                            <!--
+                            <a href="webpage/menu.html"><button class="btn btn--radius-2 btn--red" type="button" href="as">Iniciar Sesión</button</a>-->
+                            <button class="btn btn--radius-2 btn--red" type="button" onclick="getInfo()">Iniciar Sesión</button>
                         </div>
                     </form>
                 </div>
@@ -63,6 +65,7 @@
         </div>
     </div>
 
+    <!-- Jquery JS-->
     <!-- Jquery JS-->
     <script src="webpage/vendor/jquery/jquery.min.js"></script>
     <!-- Vendor JS-->
