@@ -1,25 +1,23 @@
 # PicArtApp
 
-Software Engineering project to help a local store in the process of selling stuff. 
+Software Engineering project to solve the hassle of a local florida man.
+This project hasn't started yet. Well, it did start at some point, but...
+Yeah. 
 
 ## Getting started
 
-Just clone the repository, it's a webpage.
-```bash
-git clone https://github.com/Agreedroom/PicArtApp.git
-```
+As the project hasn't begun, we advice you to not try to run it as it doesn't contain that much changes.
+Make sure you have all the dependencies.
 
 ## Usage
 
-If you need, the implemented way requires a submodule found [here](https://github.com/xtrs84zk/PicArtApp-api). After the clone is done, just:
+
 ```bash
-cd PicArtApp
-git submodule init
-git submodule update
+echo "why are we still here, just to suffer"
 ```
 
 ## Dependencies
-[PicArtApp-api](https://github.com/xtrs84zk/PicArtApp-api) - Api for the back-end to the database
+I guess... there isn't any yet.
 
 
 ## License
