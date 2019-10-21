@@ -186,6 +186,7 @@ function getLogIn()
 
 function createUsuario()
 {
+    if(document.getElementById("password").value==document.getElementById("confirmar").value&&document.getElementById("password").value!=''&&document.getElementById("confirmar").value!=''){
     fetch('http://10.0.105.52:5000/api/integrantes', {
   method: 'POST',
   body:JSON.stringify( {
@@ -205,6 +206,9 @@ function createUsuario()
     console.log(users);
        location.replace("/webpage/regreso_menu_usuarios.html");   
   })
+    }else{
+        alert("Las contraseñas no coinciden");
+    }
     
 }
 
