@@ -28,23 +28,27 @@
     
 <body>
     <style>
-        select:invalid { color: gray; }
+        select:invalid {
+            color: gray;
+        }
+
     </style>
-        <div class="wrapper wrapper--w790">
-            <div class="card card-5">
-                <div class="card-heading">
-                    <h2 class="title">Manejo de Usuarios</h2>
-                </div>
-                <div class="card-body">
-                    <form method="">
-                        <div class="form-row">
-                            <div class="name">Nombre</div>
-                            <div class="value">
-                                <div class="input-group">
-                                    <input class="input--style-5" type="text" id="nombre"required >
-                                </div>
+    <div class="wrapper wrapper--w790">
+        <div class="card card-5">
+            <div class="card-heading">
+                <h2 class="title">Manejo de Usuarios</h2>
+            </div>
+            <div class="card-body">
+                <form method="">
+                    <div class="form-row">
+                        <div class="name">Nombre</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="nombre" required>
                             </div>
                         </div>
+<<<<<<< HEAD
+<<<<<<< HEAD
                         <div class="form-row">
                             <div class="name">Usuario</div>
                             <div class="value">
@@ -84,18 +88,85 @@
                                         </select>
                                         <div class="select-dropdown"></div>
                                     </div>
+=======
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Usuario</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="usuario" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Contraseña</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Puesto</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="subject" required="required" id="puesto">
+                                        <option value="" disabled="disabled" selected="selected" hidden>Elegir opcion</option>-->
+                                        <option value="1">Administrador</option>
+                                        <option value="0">Integrante</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+>>>>>>> something
                                 </div>
                             </div>
                         </div>
-                        <div>
-                           <!-- <a href="regreso_menu_material.html"><button class="btn btn--radius-2 btn--red" type="button">Registrar Usuario</button></a> -->
-                            <button class="btn btn--radius-2 btn--red" type="button" onclick="return createUsuario();">Registrar Usuario</button>
-                            
+                    </div>
+=======
+                    </div>
+
+                    <div class="form-row">
+                        <div class="name">Usuario</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="usuario" required>
+                            </div>
                         </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Contraseña</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <input class="input--style-5" type="text" id="password" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="name">Puesto</div>
+                        <div class="value">
+                            <div class="input-group">
+                                <div class="rs-select2 js-select-simple select--no-search">
+                                    <select name="subject" required="required" id="puesto">
+                                        <option value="" disabled="disabled" selected="selected" hidden>Elegir opcion</option>-->
+                                        <option value="1">Administrador</option>
+                                        <option value="0">Integrante</option>
+                                    </select>
+                                    <div class="select-dropdown"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+>>>>>>> 6ce640ca0295ef4bd34ae8ce19c3b1dbda207d8e
+                    <div>
+                        <!-- <a href="regreso_menu_material.html"><button class="btn btn--radius-2 btn--red" type="button">Registrar Usuario</button></a> -->
+                        <button class="btn btn--radius-2 btn--red" type="button" onclick="return createUsuario();">Registrar Usuario</button>
+
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
 
     <!-- Jquery JS-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -121,6 +192,7 @@
             matchedCase.push("[0-9]"); // Numbers
             matchedCase.push("[a-z]"); // Lowercase Alphabates
 
+<<<<<<< HEAD
             // Check the conditions
             var ctr = 0;
             for (var i = 0; i < matchedCase.length; i++) {
@@ -151,7 +223,16 @@
             document.getElementById("msg").style.color = color;
         }
 
+<<<<<<< HEAD
     </script>
     </body>
+=======
+</body>
+
+>>>>>>> something
+=======
+</body>
+
+>>>>>>> 6ce640ca0295ef4bd34ae8ce19c3b1dbda207d8e
 </html>
 <!-- end document-->
